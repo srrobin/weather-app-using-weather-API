@@ -7,7 +7,7 @@
 					<div class="input-group mb-3">
 						{{form.name}}
 					  <div class="input-group-append">
-						<button class="btn btn-outline-secondary" type="submit">Button</button>
+						<button class="btn btn-info " type="submit">Button</button>
 					  </div>
 					</div>
 				</div>
@@ -23,9 +23,9 @@
 
 			</form>
 
-			<div class="weather-card">
+			<div class="weather-area">
 				{% for w in weather_data %}
-			    <div class="card">
+			    <div class="box">
 					<a href="{% url 'delete_city' w.city %} " class="delete"><i class="fa fa-times" aria-hidden="true"></i></a>
 				    <img src="https://openweathermap.org/img/wn/{{w.icon}}.png" alt="" />
 					<h3>{{w.city}}</h3>

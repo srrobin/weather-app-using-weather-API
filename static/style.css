@@ -10,55 +10,52 @@
     display: block;
     margin: 0 auto 15px;
 }
-a:hover { text-decoration: none }
-a:focus { outline: 0 solid; text-decoration: none}
-img {
-    max-width: 100%;
-    height: auto;
+a:hover {
+    text-decoration: none;
 }
-input:focus, button:focus, textarea:focus, a:focus {outline: none}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 15px;
+a:focus {
+    outline: 0 solid;
+    text-decoration: none;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+input:focus, button:focus, textarea:focus, a:focus {
+    outline: medium none;
+}
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+    margin: 0 0 15px;
 }
 p:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
-.main-body{ 
-           margin:0 auto;
-		   width:340px; 
+.wrapper {
+    margin: 0 auto;
+    width: 350px;
 }
-
-.card img {
-    float: left;
-    height: 50px;
-    width: 50px;
+.weather-area .box{ 
+margin-bottom:4px;
 }
-.card {
-  background-color:#FFA500;
+.box {
+    background:#8EE5EE;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 3px 10px;
+    text-align: center;
+    width: 49%;
+}
+.box .fa {
   float: left;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  padding: 5px;
-  width: 150px;
+  color: #ffffff;
+  opacity: .3;
 }
-.location-form {
-  margin-right: 20px;
-}
-.card  h3 {
+.box h3 {
+  font-size: 20px;
   text-transform: uppercase;
-  font-size: 18px;
 }
-.card a > .fa {
+span.info {
+  font-size: 10px;
   color: red;
-  float: right;
-  font-size: 17px;
-  opacity: 0.5;
 }
